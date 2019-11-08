@@ -1,0 +1,20 @@
+install-openam \
+--serverUrl http://openam.example.com:8080/secure \
+--adminPwd password \
+--acceptLicense \
+--cookieDomain example.com \
+--cfgStoreDirMgr 'uid=am-config,ou=admins,ou=am-config' \
+--cfgStoreDirMgrPwd password \
+--cfgStore dirServer \
+--cfgStoreHost amconfig1.example.com \
+--cfgStoreAdminPort 34444 \
+--cfgStorePort 3389 \
+--cfgStoreRootSuffix ou=am-config \
+--userStoreDirMgr 'cn=Directory Manager' \
+--userStoreDirMgrPwd password \
+--userStoreHost opendj.example.com  \
+--userStoreType LDAPv3ForOpenDS \
+--userStorePort 5389 \
+--userStoreRootSuffix dc=example,dc=com
+
+:exit
